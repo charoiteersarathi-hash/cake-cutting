@@ -1,15 +1,11 @@
-body{
-    background:#111;
-    color:white;
-    text-align:center;
-    font-family:Arial;
-}
+function openGift(){
 
-h1{
-    margin-top:100px;
-}
+    let gift=document.querySelector(".gift-box");
+    let msg=document.getElementById("message");
 
-button{
-    padding:15px 25px;
-    font-size:20px;
+    gift.innerHTML="💖";
+    gift.classList.add("opened");
+
+    msg.innerHTML="Happy Birthday Tani Shannon ❤️";
+
 }
