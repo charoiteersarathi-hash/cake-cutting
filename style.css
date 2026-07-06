@@ -1,20 +1,57 @@
-body{
+*{
     margin:0;
-    background:linear-gradient(135deg,#ff4d6d,#ff8fab);
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    overflow:hidden;
+    text-align:center;
+}
+
+.hidden{
+    display:none;
+}
+
+/* Loading Screen */
+
+#loading-screen,
+#gift-screen,
+#slideshow-screen,
+#letter-screen,
+#cake-screen,
+#cut-screen,
+#final-screen{
+    width:100%;
+    height:100vh;
+
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    font-family:Arial,sans-serif;
 }
 
-.container{
-    text-align:center;
-    color:white;
+h1{
+    margin-bottom:20px;
+    text-shadow:0 0 20px #fff;
 }
+
+button{
+    margin-top:20px;
+    padding:15px 25px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Gift Box */
 
 .gift-box{
-    font-size:150px;
+    font-size:140px;
     cursor:pointer;
     animation:shake 1s infinite;
 }
@@ -26,11 +63,65 @@ body{
     75%{transform:rotate(-10deg);}
     100%{transform:rotate(0deg);}
 }
+
+/* Slideshow */
+
 #slide{
-    margin-top:20px;
-    width:300px;
-    height:400px;
+    width:320px;
+    height:420px;
     object-fit:cover;
     border-radius:20px;
-    box-shadow:0 0 20px white;
+    box-shadow:0 0 25px white;
+    margin-bottom:20px;
+}
+
+/* Letter */
+
+.letter{
+    width:90%;
+    max-width:500px;
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:20px;
+    line-height:1.8;
+}
+
+/* Cake */
+
+#cake{
+    font-size:150px;
+}
+
+#flame{
+    font-size:50px;
+    animation:flicker 0.5s infinite;
+}
+
+@keyframes flicker{
+    0%{opacity:1;}
+    50%{opacity:0.5;}
+    100%{opacity:1;}
+}
+
+/* Cake Cutting */
+
+#knife{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+#big-cake{
+    font-size:180px;
+}
+
+/* Final */
+
+#final-screen h1{
+    color:#ff69b4;
+}
+
+#final-screen p{
+    font-size:28px;
+    margin-top:20px;
 }
