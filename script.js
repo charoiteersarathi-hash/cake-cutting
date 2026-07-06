@@ -148,3 +148,4 @@ function createHearts(){
     },500);
 
 }
+console.log("Script Loaded Successfully");
