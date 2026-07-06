@@ -5,12 +5,16 @@ const photos = [
     "photo4.jpg",
     "photo5.jpg"
 ];
+
 let current = 0;
+let started = false;
 
 function openGift(){
 
-    document.querySelector(".gift-box").innerHTML="💖";
+    if(started) return;
+    started = true;
 
+    document.querySelector(".gift-box").innerHTML = "💖";
     document.getElementById("message").innerHTML =
     "Happy Birthday Tani Shannon ❤️";
 
@@ -18,15 +22,9 @@ function openGift(){
 
     setInterval(() => {
 
-        current++;
+        current = (current + 1) % photos.length;
 
-        if(current >= photos.length){
-            current = 0;
-        }
+        document.getElementById("slide").src = photos[current];
 
-        document.getElementById("slide").src =
-        photos[current];
-
-    },3000);
-
+    }, 3000);
 }
