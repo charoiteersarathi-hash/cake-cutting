@@ -149,3 +149,9 @@ function createHearts(){
 
 }
 console.log("Script Loaded Successfully");
+document.addEventListener("DOMContentLoaded", function () {
+    const giftBox = document.getElementById("giftBox");
+    if (giftBox) {
+        giftBox.addEventListener("click", openGift);
+    }
+});
