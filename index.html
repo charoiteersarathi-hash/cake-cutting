@@ -1,25 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HPY B-DAY POONDA KUTTY 💎🫂😘</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HPY B-DAY POONDA KUTTY 💎🫂😘</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<!-- Loading Screen -->
+<div id="loading-screen">
     <h1>HPY B-DAY POONDA KUTTY 💎🫂😘</h1>
+    <p>A Special Surprise For You ❤️</p>
+    <button onclick="startWebsite()">Open Surprise 🎁</button>
+</div>
+
+<!-- Gift Box Screen -->
+<div id="gift-screen" class="hidden">
+
+    <h1>Tani Shannon ❤️</h1>
 
     <div class="gift-box" onclick="openGift()">
         🎁
     </div>
 
-    <p id="message">Click the Gift Box ❤️</p>
+    <p>Click the Gift Box</p>
+
+</div>
+
+<!-- Slideshow Screen -->
+<div id="slideshow-screen" class="hidden">
+
+    <img id="slide" src="photo1.jpg">
+
+    <h2>Our Beautiful Memories ❤️</h2>
+
+</div>
+
+<!-- Love Letter Screen -->
+<div id="letter-screen" class="hidden">
+
+    <div class="letter">
+
+        <h2>💌 My Love</h2>
+
+        <p>
+        Happy Birthday My Poonda Kutty 💎🫂😘
+        <br><br>
+        Every moment with you is special.
+        Your smile makes my world brighter.
+        Thank you for being part of my life.
+        <br><br>
+        I wish you happiness, success and endless love.
+        <br><br>
+        Happy Birthday Tani Shannon ❤️
+        <br><br>
+        Yours Forever,
+        <br>
+        Saran Sarathi 💎
+        </p>
+
+        <button onclick="showCake()">
+            Next 🎂
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Cake Screen -->
+<div id="cake-screen" class="hidden">
+
+    <h1>Happy Birthday ❤️</h1>
+
+    <div id="cake">
+        🎂
+    </div>
+
+    <div id="flame">
+        🔥
+    </div>
+
+    <button onclick="blowCandle()">
+        Blow Candle 🕯️
+    </button>
+
+</div>
+
+<!-- Cake Cutting Screen -->
+<div id="cut-screen" class="hidden">
+
+    <h1>Cut The Cake 🎂</h1>
+
+    <div id="knife">
+        🔪
+    </div>
+
+    <div id="big-cake">
+        🎂
+    </div>
+
+    <button onclick="cutCake()">
+        Cut Cake ❤️
+    </button>
+
+</div>
+
+<!-- Final Screen -->
+<div id="final-screen" class="hidden">
+
+    <h1>🎉 Happy Birthday Tani Shannon 🎉</h1>
+
+    <h2>
+        From Saran Sarathi 💎🫂😘
+    </h2>
+
+    <p>
+        I Love You Forever ❤️
+    </p>
+
 </div>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-<div id="slideshow" style="display:none;">
-    <img id="slide" src="photos/photo1.jpg" width="300">
-</div>
