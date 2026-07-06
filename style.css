@@ -18,13 +18,13 @@ body{
 
 /* Loading Screen */
 
-#loading-screen,
-#gift-screen,
-#slideshow-screen,
-#letter-screen,
-#cake-screen,
-#cut-screen,
-#final-screen{
+#loading-screen:not(.hidden),
+#gift-screen:not(.hidden),
+#slideshow-screen:not(.hidden),
+#letter-screen:not(.hidden),
+#cake-screen:not(.hidden),
+#cut-screen:not(.hidden),
+#final-screen:not(.hidden){
     width:100%;
     height:100vh;
 
@@ -124,4 +124,7 @@ button{
 #final-screen p{
     font-size:28px;
     margin-top:20px;
+}
+.hidden{
+    display:none !important;
 }
